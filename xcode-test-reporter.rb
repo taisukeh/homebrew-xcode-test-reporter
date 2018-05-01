@@ -10,9 +10,11 @@ class XcodeTestReporter < Formula
 
   def install
     # system "cmake", ".", *std_cmake_args
+    system "pwd"
+    system "ls -al"
     system "cp", "xcode-test-reporter_darwin_x86_64", "xcode-test-reporter_darwin"
 
-     bin.install "xcode-test-reporter"
+    bin.install "xcode-test-reporter"
   end
 
   test do
