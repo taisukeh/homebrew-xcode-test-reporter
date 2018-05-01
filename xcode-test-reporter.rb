@@ -5,7 +5,7 @@ class XcodeTestReporter < Formula
   desc "Generates JUnit or HTML report from Xcode plist test report files."
   homepage "https://github.com/taisukeh/xcode-test-reporter"
   url "https://github.com/taisukeh/xcode-test-reporter/releases/download/0.0.2/xcode-test-reporter_darwin_x86_64"
-  sha256 "c80501f83f09915f66b2d8c80b08bdca3220cb19"
+  sha256 "deb34d0aa19a091a61867f73247a88b076c5891a0e0f431871db2ed88ec00057"
   # depends_on "cmake" => :build
 
   def install
