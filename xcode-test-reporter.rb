@@ -4,17 +4,11 @@
 class XcodeTestReporter < Formula
   desc "Generates JUnit or HTML report from Xcode plist test report files."
   homepage "https://github.com/taisukeh/xcode-test-reporter"
-  url "https://github.com/taisukeh/xcode-test-reporter/releases/download/0.0.6/xcode-test-reporter_darwin_x86_64"
-  sha256 "49152c2ff2f464ec2e479fbc6546d998cf27c75bc3242159433fe99a7e35cd8b"
+  url "https://github.com/taisukeh/xcode-test-reporter/releases/download/0.0.2/xcode-test-reporter_darwin_x86_64"
+  sha256 "c80501f83f09915f66b2d8c80b08bdca3220cb19"
   # depends_on "cmake" => :build
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
-    # Remove unrecognized options if warned by configure
-    system "./configure", "--disable-debug",
-                          "--disable-dependency-tracking",
-                          "--disable-silent-rules",
-                          "--prefix=#{prefix}"
     # system "cmake", ".", *std_cmake_args
     system "cp", "xcode-test-reporter_darwin_x86_64" "xcode-test-reporter_darwin"
 
