@@ -4,7 +4,7 @@ set -eu
 
 tag=`curl -s -L https://api.github.com/repos/taisukeh/xcode-test-reporter/releases/latest | jq -r '.tag_name'`
 
-sha256=`curl -s -L https://github.com/taisukeh/xcode-test-reporter/releases/download/$tag/xcode-test-reporter_darwin_x86_64.sha256`
+sha256=`curl -s -L https://github.com/taisukeh/xcode-test-reporter/releases/download/$tag/xcode-test-reporter_darwin_x86_64.tar.gz.sha256`
 
 cat << EOL > xcode-test-reporter.rb
 # Documentation: https://docs.brew.sh/Formula-Cookbook
