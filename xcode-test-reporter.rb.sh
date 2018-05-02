@@ -16,8 +16,6 @@ class XcodeTestReporter < Formula
   sha256 "$sha256"
 
   def install
-    mv "xcode-test-reporter_darwin_x86_64", "xcode-test-reporter_darwin"
-
     bin.install "xcode-test-reporter"
   end
 
