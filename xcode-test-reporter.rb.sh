@@ -12,7 +12,7 @@ cat << EOL > xcode-test-reporter.rb
 class XcodeTestReporter < Formula
   desc "Generates JUnit or HTML report from Xcode plist test report files."
   homepage "https://github.com/taisukeh/xcode-test-reporter"
-  url "https://github.com/taisukeh/xcode-test-reporter/releases/download/$tag/xcode-test-reporter_darwin_x86_64"
+  url "https://github.com/taisukeh/xcode-test-reporter/releases/download/$tag/xcode-test-reporter_darwin_x86_64.tar.gz"
   sha256 "$sha256"
 
   def install
